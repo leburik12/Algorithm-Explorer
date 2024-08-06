@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rvPrefix"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/user_row_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/rvvPrefix"
+            android:layout_width="wrap_content"
+            android:text="1"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/headerColor"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/algorithm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/headerColor"
+        app:layout_constraintBottom_toBottomOf="@+id/rvPrefix"
+        app:layout_constraintStart_toEndOf="@+id/rvPrefix"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        android:text="@string/Heaps"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/baseline_navigate_next_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/rvPrefix"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

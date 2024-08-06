@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/data_structure_list">
+
+    <fragment
+        android:id="@+id/computer_vision"
+        android:name="com.example.byteme1.ComputerVision"
+        android:label="computer_vision"
+        tools:layout="@layout/computer_vision_l" >
+        <action
+            android:id="@+id/action_computer_vision_to_fragment_AlgorithmDetail"
+            app:destination="@id/fragment_AlgorithmDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/natural_language_processing"
+        android:name="com.example.byteme1.NLP"
+        android:label="natural_language_processing"
+        tools:layout="@layout/nlp_l" >
+        <action
+            android:id="@+id/action_natural_language_processing_to_fragment_AlgorithmDetail"
+            app:destination="@id/fragment_AlgorithmDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/deep_learning"
+        android:name="com.example.byteme1.DeepLearning"
+        android:label="deep_learning"
+        tools:layout="@layout/deep_learning_l" >
+        <action
+            android:id="@+id/action_deep_learning_to_fragment_AlgorithmDetail"
+            app:destination="@id/fragment_AlgorithmDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/data_structure_list"
+        android:name="com.example.byteme1.FragmentDSList"
+        android:label="data_structure_list"
+        tools:layout="@layout/algorithm_list" >
+        <action
+            android:id="@+id/action_data_structure_list_to_fragment_AlgorithmDetail"
+            app:destination="@id/fragment_AlgorithmDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAlgorithmList"
+        android:name="com.example.byteme1.FragmentAlgorithmList"
+        android:label="algorithm_list"
+        tools:layout="@layout/fragment_algorithm_list" >
+        <action
+            android:id="@+id/action_fragmentAlgorithmList_to_fragment_AlgorithmDetail"
+            app:destination="@id/fragment_AlgorithmDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_AlgorithmDetail"
+        android:name="com.example.byteme1.Fragment_AlgorithmDetail"
+        android:label="algorithm_detail"
+        tools:layout="@layout/algorithm_detail" >
+
+<!--        <argument-->
+<!--            android:name="algoname"-->
+<!--            app:argType="string" />-->
+
+        <action
+            android:id="@+id/action_fragment_AlgorithmDetail_to_data_structure_list"
+            app:destination="@id/data_structure_list" />
+        <action
+            android:id="@+id/action_fragment_AlgorithmDetail_to_computer_vision"
+            app:destination="@id/computer_vision"   />
+        <action
+            android:id="@+id/action_fragment_AlgorithmDetail_to_natural_language_processing"
+            app:destination="@id/natural_language_processing" />
+        <action
+            android:id="@+id/action_fragment_AlgorithmDetail_to_deep_learning"
+            app:destination="@id/deep_learning" />
+        <action
+            android:id="@+id/action_fragment_AlgorithmDetail_to_fragmentAlgorithmList"
+            app:destination="@id/fragmentAlgorithmList" />
+        <action
+            android:id="@+id/action_fragment_AlgorithmDetail_to_computer_vision2"
+            app:destination="@id/computer_vision" />
+    </fragment>
+
+</navigation>

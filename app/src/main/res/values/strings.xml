@@ -1,0 +1,753 @@
+<resources>
+    <string name="app_name">ByteMe1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="service">Services</string>
+    <string name="unseen">Unseen</string>
+    <string name="about">About</string>
+    <string name="verses">Verses</string>
+    <string name="algorithmlist">AlgoList</string>
+    <string name="algorithmdetail">Algorithm Detail</string>
+    <string name="example">Example</string>
+
+    <string name="cv">CV</string>
+    <string name="nlp">NLP</string>
+    <string name="dslist">DSList</string>
+    <string name="deep_learning">DL</string>
+
+    <string name="mlalgo">MLalgo</string>
+
+    <!--Data Structures-->
+    <string name="linked_lists">Linked Lists</string>
+    <string name="Stacks">Stacks</string>
+    <string name="Queues">Queues</string>
+    <string name="HashTables">Hash Tables</string>
+    <string name="AVLTrees">AVL Trees</string>
+    <string name="BinaryTrees">BinaryTrees</string>
+    <string name="Heaps">Heaps</string>
+    <string name="RedBlackTrees">Red-Black Trees</string>
+    <string name="Tries">Tries</string>
+    <string name="FenwickTrees">Fenwick Trees</string>
+    <string name="SegmentTrees">Segment Trees</string>
+    <string name="DisjointSetUnion">DisjointSetUnion</string>
+    <string name="MinimumSpanningTrees">Minimum Spanning Trees</string>
+
+    <!-- NLP Algorithms -->
+    <string name="nlp1">Lemmatization + Stemming</string>
+    <string name="nlp2">Topic Modelling</string>
+    <string name="nlp3">Keyword Extraction</string>
+    <string name="nlp4">Knowledge Graphs</string>
+    <string name="nlp5">Words Cloud</string>
+    <string name="nlp6">Named Entity Recognition</string>
+    <string name="nlp7">Sentiment Analysis</string>
+    <string name="nlp8">Text Summarization</string>
+    <string name="nlp9">Bag of Words</string>
+    <string name="nlp10">Tokenization</string>
+
+   <!-- Deep Learning algorithms  -->
+    <string name="Convolutional_Layer">Convolutional Layer</string>
+    <string name="cnn_description">
+       A Convolutional Neural Network, also known as CNN or ConvNet,
+        is a class of neural networks that specializes in processing
+        data that has a grid-like topology, such as an image.
+        A digital image is a binary representation of visual data.
+        It contains a series of pixels arranged in a grid-like fashion
+        that contains pixel values to denote how bright and what color
+        each pixel should be.
+        The human brain processes a huge amount of information the second
+        we see an image. Each neuron works in its own receptive field and
+        is connected to other neurons in a way that they cover the entire
+        visual field. Just as each neuron responds to stimuli only in the
+        restricted region of the visual field called the receptive field in
+        the biological vision system, each neuron in a CNN processes data only
+        in its receptive field as well. The layers are arranged in such a way so
+        that they detect simpler patterns first (lines, curves, etc.) and more
+        complex patterns (faces, objects, etc.) further along. By using a CNN,
+        one can enable sight to computers.
+        A CNN typically has three layers: a convolutional layer, a pooling layer, and a fully connected layer.
+    </string>
+    <string name="cnn_body_header_1">Convolution Layer</string>
+    <string name="cnn_body_2">The convolution layer is the core building block of the CNN.
+        It carries the main portion of the network’s computational load.
+        This layer performs a dot product between two matrices, where one
+        matrix is the set of learnable parameters otherwise known as a kernel,
+        and the other matrix is the restricted portion of the receptive field.
+        The kernel is spatially smaller than an image but is more in-depth.
+        This means that, if the image is composed of three (RGB) channels,
+        the kernel height and width will be spatially small, but the depth
+        extends up to all three channels.During the forward pass, the kernel
+        slides across the height and width of the image-producing the image
+        representation of that receptive region. This produces a two-dimensional
+        representation of the image known as an activation map that gives the response
+        of the kernel at each spatial position of the image. The sliding size of the kernel
+        is called a stride.If we have an input of size W x W x D and Dout number of kernels
+        with a spatial size of F with stride S and amount of padding P, then the size of output
+        volume can be determined by the following formula:
+</string>
+
+    <string name="cnn_body_header_2">Pooling Layer</string>
+    <string name="cnn_body_3">
+        The pooling layer replaces the output of the network at certain
+        locations by deriving a summary statistic of the nearby outputs.
+        This helps in reducing the spatial size of the representation,
+        which decreases the required amount of computation and weights.
+        The pooling operation is processed on every slice of the representation individually.
+        There are several pooling functions such as the average of the rectangular neighborhood,
+        L2 norm of the rectangular neighborhood, and a weighted average based on the distance
+        from the central pixel. However, the most popular process is max pooling, which reports
+        the maximum output from the neighborhood.
+</string>
+    <string name="cnn_body_header_3">Non-Linearity Layers</string>
+    <string name="cnn_body_4">
+        The pooling layer replaces the output of the network at certain
+        locations by deriving a summary statistic of the nearby outputs.
+        This helps in reducing the spatial size of the representation,
+        which decreases the required amount of computation and weights.
+        The pooling operation is processed on every slice of the representation individually.
+        There are several pooling functions such as the average of the rectangular neighborhood,
+        L2 norm of the rectangular neighborhood, and a weighted average based on the distance
+        from the central pixel. However, the most popular process is max pooling, which reports
+        the maximum output from the neighborhood.
+</string>
+
+    <string name="PoolingLayer">Pooling Layer</string>
+    <string name="Fully_Connected_Layer">Fully Connected Layer</string>
+    <string name="Dropout_Layer">Dropout Layer</string>
+
+    <string name="dlExampleheader">CNN Architecture Example</string>
+    <string name="dlexa">
+        Here\'s an example architecture of a simple CNN for image classification:
+        Input Layer: Accepts the input image (e.g., 28x28x1 for grayscale images).
+        Convolutional Layer 1: Applies 32 filters of size 3x3.
+        ReLU Activation: Applies ReLU activation function.
+        Pooling Layer 1: Max pooling with a 2x2 filter and stride of 2.
+        Convolutional Layer 2: Applies 64 filters of size 3x3.
+        ReLU Activation: Applies ReLU activation function.
+        Pooling Layer 2: Max pooling with a 2x2 filter and stride of 2.
+        Fully Connected Layer: Flattens the output and applies a dense layer.
+        Dropout Layer: Applies dropout for regularization.
+        Output Layer: Dense layer with softmax activation for classification.
+    </string>
+
+    <!-- Computer vision -->
+    <string name="cv1_body1">The FREAK (Fast Retina Keypoint) algorithm is a feature descriptor used in computer vision to extract and describe keypoints from images. It\'s designed to be fast and efficient, making it suitable for real-time applications. Here\’s a detailed explanation of FREAK and an example of how to use it in Python.</string>
+    <string name="cv1_sub_header_2">Overview of FREAK</string>
+    <string name="cv1_body2">Keypoint Detection: Before applying FREAK, keypoints are detected using a keypoint detector like SIFT (Scale-Invariant Feature Transform) or SURF (Speeded-Up Robust Features). Keypoints are points of interest in an image that are distinctive and can be reliably detected.
+Feature Descriptor: FREAK is used to describe these keypoints. It generates a binary descriptor that represents the appearance of the keypoint in its local neighborhood.
+Efficiency: FREAK is designed to be computationally efficient. It generates descriptors that are binary, meaning they can be compared quickly using Hamming distance. This is advantageous over other descriptors that use floating-point comparisons.
+
+</string>
+    <string name="cv1_sub_header_3">How FREAK Works</string>
+    <string name="cv1_body3">Binary Descriptor: FREAK creates a binary string to describe each keypoint. The descriptor is formed by comparing the intensity of pixels in the keypoint’s neighborhood.
+Retina-like Sampling: FREAK uses a sampling pattern that mimics the retina, which helps in capturing keypoint information efficiently.
+</string>
+    <string name="cv1_sub_header_4">Possible Misconceptions</string>
+    <string name="cv1_body4">FREAK Descriptor: This is a feature descriptor used in computer vision, particularly for object recognition and image matching. It\'s not an algorithm in itself but a tool within various algorithms.
+Other Algorithms: There might be a confusion with other algorithms that have similar names or functionalities.</string>
+    <string name="cv1_example_header">Example using OpenCV:</string>
+    <string name="cv1_example_body">While OpenCV doesn\'t have a direct implementation of FREAK,\n
+        we can use other similar descriptors like BRIEF or ORB and then manually implement the FREAK-like comparison logic.\n\n
+
+Python\n
+import cv2\n
+import numpy as np\n
+
+# Load images\n
+img1 = cv2.imread(\'image1.jpg\')\n
+img2 = cv2.imread(\'image2.jpg\')\n
+
+# Convert to grayscale\n
+gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)\n
+gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)\n
+
+# Create ORB detector\n
+orb = cv2.ORB_create()\n
+
+# Find keypoints and descriptors\n
+kp1, des1 = orb.detectAndCompute(gray1, None)\n
+kp2, des2 = orb.detectAndCompute(gray2, None)\n
+
+# Brute-Force Matcher (Replace with custom FREAK-like matcher)\n
+bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)\n
+matches = bf.match(des1, des2)\n
+
+# Sort matches by distance\n
+matches = sorted(matches, key=lambda x: x.distance)  \n
+
+# Draw matches\n
+img3 = cv2.drawMatches(img1, kp1, img2, kp2, matches[:10], None, flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)\n
+cv2.imshow(\'Matches\', img3)\n
+cv2.waitKey(0)\n
+cv2.destroyAllWindows()\n </string>
+
+
+
+<!-- Fragment Algorithm List   -->
+    <string name="algo1_body1">The Traveling Salesman Problem (TSP) is a classic optimization problem in computer science and operations research.
+        It seeks to find the shortest possible route that a salesman must travel to visit a given set of
+        cities and return to the origin city. In essence, it\s about finding the most efficient route given a set of locations.
+    </string>
+    <string name="algo1_sub_header_2">Key Characteristics:</string>
+    <string name="algo1_body2">Optimization Problem: It aims to find the best solution (shortest route)
+        among many possible options.Combinatorial Problem: The number of possible routes grows exponentially with
+        the number of cities, making it challenging to explore all possibilities.
+        NP-hard: There is no known algorithm that can solve the TSP efficiently for large datasets.
+    </string>
+    <string name="algo1_sub_header_3">Real-world Applications:</string>
+    <string name="algo1_body3">Logistics and Transportation:
+        Vehicle routing for delivery services (e.g., UPS, FedEx)
+        Optimizing transportation routes for goods or people
+        Scheduling public transportation routes
+        Manufacturing:
+            Sequencing production tasks to minimize setup time
+            Optimizing machine tool paths in CNC machining
+        Electronics:
+            Designing printed circuit boards to minimize wire length
+        DNA Sequencing:
+            Finding the optimal order of DNA fragments to assemble a complete genome
+</string>
+    <string name="algo1_sub_header_4">Challenges and Solutions:</string>
+    <string name="algo1_body4">Computational Complexity: Due to its NP-hard nature, exact solutions become impractical for large problem instances.
+            Approximation Algorithms: These algorithms provide near-optimal solutions within a reasonable time frame.
+            Examples include:
+                Greedy algorithms
+                Nearest neighbor algorithm
+                Simulated annealing
+                Genetic algorithms
+            Heuristic Methods:
+                These methods use problem-specific knowledge to find good solutions efficiently.</string>
+    <string name="algo1_example_header">Example using python:</string>
+    <string name="algo1_example_body">\n\n
+        import itertools\n
+
+# Define the distance matrix\n
+distance_matrix = [\n
+    [0, 10, 15, 20],\n
+    [10, 0, 35, 25],\n
+    [15, 35, 0, 30],\n
+    [20, 25, 30, 0]\n
+]\n
+
+# Number of cities\n
+num_cities = len(distance_matrix)\n
+
+# Generate all possible permutations of the cities (excluding the starting city)\n
+city_indices = range(1, num_cities)\n
+all_permutations = itertools.permutations(city_indices)\n
+
+# Function to calculate the total distance of a specific route\n
+def calculate_route_distance(route, distance_matrix):\n
+    total_distance = 0\n
+    # Add the distance from the starting city (0) to the first city in the route\n
+    total_distance += distance_matrix[0][route[0]]\n
+    # Add the distances between consecutive cities in the route\n
+    for i in range(len(route) - 1):\n
+        total_distance += distance_matrix[route[i]][route[i + 1]]\n
+    # Add the distance from the last city back to the starting city (0)\n
+    total_distance += distance_matrix[route[-1]][0]\n
+    return total_distance\n
+
+# Find the shortest route\n
+min_distance = float(\'inf\')\n
+best_route = None\n
+
+for perm in all_permutations:\n
+    current_distance = calculate_route_distance(perm, distance_matrix)\n
+    if current_distance &lt; min_distance:\n
+            min_distance = current_distance\n
+            best_route = perm\n
+
+# Convert route indices back to city names for display\n
+best_route = (0,) + best_route + (0,)\n
+
+# Print the best route and its distance\n
+print("Best route: ", " -> ".join(map(str, best_route)))\n
+print("Minimum distance: ", min_distance)\n
+    </string>
+
+
+
+    <string name="algo2_body1">The Knapsack Problem is a well-known problem in combinatorial optimization,
+        often used to illustrate the concepts of dynamic programming and greedy algorithms.
+        It involves selecting a subset of items with given weights and values to maximize the total value without exceeding a weight limit.
+    </string>
+    <string name="algo2_sub_header_2">Types of Knapsack Problems</string>
+    <string name="algo2_body2">1. 0/1 Knapsack Problem: Each item can either be included or excluded from the knapsack.\n
+        2. Fractional Knapsack Problem: Items can be broken into smaller pieces, allowing for fractional amounts of items to be included.\n
+        3. Multiple Knapsack Problem: There are multiple knapsacks, each with a weight limit.\n
+    </string>
+    <string name="algo2_sub_header_3">Problem Formulation</string>
+    <string name="algo2_body3">
+        Input\n
+        A list of items, each with a weight and a value.\n
+        A maximum weight capacity for the knapsack.\n
+        Output:\n
+            The maximum value achievable without exceeding the weight capacity.\n
+</string>
+    <string name="algo2_sub_header_4">Solving the Knapsack Problem</string>
+    <string name="algo2_body4">
+        Solving the Knapsack Problem\n
+        This method involves considering all possible combinations of items and selecting the one with the maximum
+        value that fits within the weight limit. While straightforward, it becomes computationally infeasible for
+        large datasets due to its exponential time complexity.
+        Dynamic Programming\n
+        Dynamic programming is a more efficient approach to solve the knapsack problem. It breaks down the problem into
+        smaller subproblems and stores the results to avoid redundant calculations.
+    </string>
+    <string name="algo2_example_header">Python Code for 0/1 Knapsack:</string>
+    <string name="algo2_example_body">
+        def knapsack(values, weights, capacity):\n
+    n = len(values)\n
+    # Create a 2D DP array to store the maximum value that can be obtained with given weight\n
+    dp = [[0 for _ in range(capacity + 1)] for _ in range(n + 1)]\n
+
+    # Build the DP array\n
+    for i in range(1, n + 1):\n
+        for w in range(capacity + 1):\n
+            if weights[i - 1] &lt;= w:\n
+                dp[i][w] = max(dp[i - 1][w], dp[i - 1][w - weights[i - 1]] + values[i - 1])\n
+            else:\n
+                dp[i][w] = dp[i - 1][w]\n
+
+    # The maximum value will be in dp[n][capacity]\n
+    return dp[n][capacity]\n
+
+# Example usage\n
+values = [60, 100, 120]\n
+weights = [10, 20, 30]\n
+capacity = 50\n
+
+max_value = knapsack(values, weights, capacity)\n
+print(f"Maximum value in knapsack: {max_value}")\n
+    </string>
+
+    <string name="algo3_body1">The Graph Isomorphism problem is a fundamental question in graph theory:
+        Given two graphs, determine whether they are isomorphic. Two graphs are isomorphic if there exists
+        a one-to-one correspondence (bijection) between their vertices such that the adjacency relationship is preserved.
+        In simpler terms, two graphs are isomorphic if they are essentially the same graph, just with different vertex labels.
+    </string>
+    <string name="algo3_sub_header_2">Key Points:</string>
+    <string name="algo3_body2">Bijection: A one-to-one mapping between the vertices of two graphs.\n
+        Adjacency Preservation: If two vertices are connected in one graph, their corresponding vertices must be connected in the other graph, and vice versa
+    </string>
+    <string name="algo3_sub_header_3">Challenges and Complexity</string>
+    <string name="algo3_body3">
+NP-Intermediate: Graph Isomorphism is believed to be neither in P (solvable in polynomial time) nor NP-complete (verifiable in polynomial time). It occupies a unique position in the complexity hierarchy.\n
+No Efficient Algorithm: Despite extensive research, no polynomial-time algorithm has been found to definitively solve the Graph Isomorphism problem.\n
+</string>
+    <string name="algo3_sub_header_4">Formulation:</string>
+    <string name="algo3_body4">
+        Given two graphs G1 and G2, determine whether there exists a bijection (a one-to-one correspondence) between the vertices of G1 and G2 such that the edges are preserved.
+    </string>
+    <string name="algo3_example_header">Python Example</string>
+    <string name="algo3_example_body">
+        import networkx as nx\n
+
+# Create Graph 1\n
+G1 = nx.Graph()\n
+G1.add_edges_from([(0, 1), (0, 2), (1, 3), (2, 3)])\n
+
+# Create Graph 2\n
+G2 = nx.Graph()\n
+G2.add_edges_from([(10, 11), (10, 12), (11, 13), (12, 13)])\n
+
+# Check if the two graphs are isomorphic\n
+is_isomorphic = nx.is_isomorphic(G1, G2)\n
+
+print(f"Graph G1 is isomorphic to Graph G2: {is_isomorphic}")\n
+    </string>
+
+
+    <string name="algo4_body1">The Boolean Satisfiability Problem (SAT) is a fundamental problem in
+        computer science and mathematical logic. It involves determining if there exists an assignment of
+        truth values (true or false) to variables that makes a given Boolean formula true.
+    </string>
+    <string name="algo4_sub_header_2">Key Points:</string>
+    <string name="algo4_body2">Boolean Formula: A logical statement composed of variables, logical operators (AND, OR, NOT), and possibly parentheses.\n
+Satisfiability: A Boolean formula is satisfiable if there is some assignment of truth values to its variables that makes the formula true.\n
+CNF (Conjunctive Normal Form): A standard form for Boolean formulas where the formula is expressed as an AND of clauses, and each clause is an OR of literals (variables or their negations).\n
+    </string>
+    <string name="algo4_sub_header_3">SAT Algorithms</string>
+    <string name="algo4_body3">
+        1. Brute Force
+A simple but inefficient approach is to try all possible assignments of truth values to the variables. For
+𝑛 variables, there are 2 raise to n possible assignments.\n
+2. DPLL Algorithm (Davis-Putnam-Logemann-Loveland)\n
+The DPLL algorithm is a backtracking-based search algorithm that improves on brute force by:\n
+
+Unit Propagation: Simplifies the formula by repeatedly assigning truth values to variables that appear in unit clauses (clauses with a single literal).\n
+Pure Literal Elimination: Assigns truth values to variables that appear with only one polarity (either always positive or always negative) in the formula.\n
+Backtracking: Recursively tries different assignments and backtracks when a contradiction is found.\n
+</string>
+    <string name="algo4_sub_header_4">Python Example: Using the PySAT Library
+</string>
+    <string name="algo4_body4">
+        PySAT is a Python library for SAT solving that provides a convenient interface to various SAT solvers.
+Installation
+First, install PySAT using pip:
+        pip install python-sat
+    </string>
+    <string name="algo4_example_header">Python Example</string>
+    <string name="algo4_example_body">
+    from pysat.solvers import Solver\n
+
+    # Define the CNF formula\n
+    # (x1 OR NOT x2) AND (x2 OR x3) AND (NOT x1 OR NOT x3)\n
+    cnf = [\n
+    [1, -2],   # x1 OR NOT x2\n
+    [2, 3],    # x2 OR x3\n
+    [-1, -3]   # NOT x1 OR NOT x3\n
+    ]\n
+
+    # Initialize the SAT solver\n
+    solver = Solver(name=\'g3\')  # \'g3\' is the Glucose3 solver\n
+
+    # Add the clauses to the solver\n
+    for clause in cnf:\n
+    solver.add_clause(clause)\n
+
+    # Check for satisfiability\n
+    is_satisfiable = solver.solve()\n
+
+    # Get the satisfying assignment if it exists\n
+    if is_satisfiable:\n
+    solution = solver.get_model()\n
+    print("Satisfiable: ", solution)\n
+    else:\n
+    print("Unsatisfiable")\n
+
+    # Clean up the solver\n
+    solver.delete()\n
+    </string>
+
+
+    <string name="algo5_body1">Boolean Integer Factorization (BIF) is an algorithm used to find the prime
+        factors of an integer. It is a variant of the classical integer factorization problem, which aims to
+        express a given integer as a product of its prime factors.BIF introduces a Boolean constraint to the
+        problem, requiring the factors to be distinct.
+    </string>
+    <string name="algo5_sub_header_2">Key Points:</string>
+    <string name="algo5_body2">Boolean Formula: A logical statement that can be true or false, composed of Boolean variables and logical operators.\n
+SAT Solver: A tool that determines whether a Boolean formula can be satisfied and finds the assignments that make it true.\n
+    </string>
+    <string name="algo5_sub_header_3">Steps to Encode Integer Factorization as a SAT Problem</string>
+    <string name="algo5_body3">
+        1. Binary Representation: Represent the factors a and b in binary.\n
+        2. Boolean Variables: Create Boolean variables for each bit of a and b.\n
+        3. Product Constraints: Encode the multiplication of a and b as a series of Boolean constraints.\n
+        4. SAT Solver: Use a SAT solver to find a satisfying assignment that corresponds to the factors.\n
+</string>
+    <string name="algo5_sub_header_4">
+        Python Example: Using PySAT for Integer Factorization
+</string>
+    <string name="algo5_body4">
+        Below is a simplified example to illustrate how integer factorization can be encoded as a SAT problem using the PySAT library. For simplicity, we will only handle small integers.
+
+Installation
+First, install PySAT using pip:
+        pip install python-sat
+    </string>
+    <string name="algo5_example_header">Python Example</string>
+    <string name="algo5_example_body">
+        from pysat.solvers import Solver\n
+from pysat.formula import CNF\n
+from itertools import combinations\n
+
+# Function to generate binary representation constraints\n
+def generate_constraints(N):\n
+    max_bits = N.bit_length()\n
+    solver = Solver(name=\'g3\')\n
+
+    # Generate Boolean variables for bits of a and b\n
+    a_bits = [[f\'a_{i}_{j}\' for j in range(max_bits)] for i in range(max_bits)]\n
+    b_bits = [[f\'b_{i}_{j}\' for j in range(max_bits)] for i in range(max_bits)]\n
+
+    # Convert variable names to integers for PySAT\n
+    var_to_int = {}\n
+    int_to_var = {}\n
+    counter = 1\n
+
+    def get_var(var):\n
+        nonlocal counter\n
+        if var not in var_to_int:\n
+            var_to_int[var] = counter\n
+            int_to_var[counter] = var\n
+            counter += 1\n
+        return var_to_int[var]\n
+
+    # Constraints for multiplication\n
+    cnf = CNF()\n
+
+    # Example constraint for multiplication:\n
+    # Suppose N = 15 and a, b are both 4-bit numbers:\n
+    # Let\'s encode (a * b) == 15 for a = 2 bits and b = 3 bits.\n
+
+    for a_val in range(1, 1 &lt;&lt; max_bits):\n
+        for b_val in range(1, 1 &lt;&lt; max_bits):\n
+            if a_val * b_val == N:\n
+                clause = []\n
+                a_bin = bin(a_val)[2:].zfill(max_bits)\n
+                b_bin = bin(b_val)[2:].zfill(max_bits)\n
+                for i in range(max_bits):\n
+                    if a_bin[i] == \'1\':\n
+                        clause.append(get_var(a_bits[0][i]))\n
+                    else:\n
+                        clause.append(-get_var(a_bits[0][i]))\n
+                for j in range(max_bits):\n
+                    if b_bin[j] == \'1\':\n
+                        clause.append(get_var(b_bits[0][j]))\n
+                    else:\n
+                        clause.append(-get_var(b_bits[0][j]))\n
+                cnf.append(clause)\n
+
+    # Add CNF to solver\n
+    solver.append_formula(cnf)\n
+
+    return solver, int_to_var\n
+
+# Function to find factors using SAT solver\n
+def find_factors(N):\n
+    solver, int_to_var = generate_constraints(N)\n
+
+    if solver.solve():\n
+        model = solver.get_model()\n
+        a_val = 0\n
+        b_val = 0\n
+        max_bits = N.bit_length()\n
+
+        for var in model:\n
+            if var > 0:\n
+                var_name = int_to_var[var]\n
+                if var_name.startswith(\'a_0_\'):\n
+                    bit_index = int(var_name.split(\'_\')[-1])\n
+                    a_val |= (1 &lt;&lt; bit_index)\n
+                elif var_name.startswith(\'b_0_\'):\n
+                    bit_index = int(var_name.split(\'_\')[-1])\n
+                    b_val |= (1 &lt;&lt; bit_index)\n
+
+        return a_val, b_val\n
+    else:\n
+        return None, None\n
+
+# Example usage\n
+N = 15\n
+a, b = find_factors(N)\n
+if a and b:\n
+    print(f"Factors of {N}: {a} * {b} = {N}")\n
+else:\n
+    print(f"No non-trivial factors found for {N}")\n
+    </string>
+
+
+    <string name="algo7_body1">The Subset Sum Problem is a classic problem in computer science and mathematics that involves finding a subset of a given set of integers that sums up to a target value.
+    </string>
+    <string name="algo7_sub_header_2">Problem Statement</string>
+    <string name="algo7_body2">Given a set of non-negative integers and a value sum, determine if there is a subset of
+        the given set that adds up to the given sum. \n
+
+Example\n
+Set: {3, 34, 4, 12, 5, 2}\n
+Sum: 9\n
+Output: True (Subset {4, 5} adds up to 9)\n
+    </string>
+    <string name="algo7_sub_header_3">Algorithm: Dynamic Programming</string>
+    <string name="algo7_body3">
+       One of the most efficient ways to solve this problem is using dynamic programming.\n
+
+Approach:\n
+
+Create a boolean matrix dp where dp[i][j] is true if there is a subset of set[0..i-1] with sum equal to j.\n
+Initialize the first row of dp to true because the empty set (subset with 0 elements) has sum 0.\n
+Initialize the first column of dp to true because 0 can be formed with an empty set.\n
+Fill the rest of the matrix using the following recurrence:\n
+dp[i][j] = dp[i-1][j] || dp[i-1][j-set[i-1]]\n
+If dp[i-1][j] is true, it means there is a subset of set[0..i-2] with sum j, so we don\'t need to include set[i-1].\n
+If dp[i-1][j-set[i-1]] is true, it means there is a subset of set[0..i-2] with sum j-set[i-1], so we can include set[i-1] to form j.\n
+Time Complexity: O(n * sum)\n
+Space Complexity: O(n * sum)\n
+</string>
+    <string name="algo7_sub_header_4">
+        Recursive Approach:
+</string>
+    <string name="algo7_body4">
+       Base Cases:\n
+If the target sum is 0, return true (empty subset).\n
+If the set is empty and the target sum is not 0, return false.\n
+Recursive Step:\n
+Consider two cases for each element in the set:\n
+Exclude the current element and check for the target sum.\n
+Include the current element and check for the target sum minus the current element\’s value.\n
+    </string>
+    <string name="algo7_example_header">Python Example</string>
+    <string name="algo7_example_body">
+        def is_subset_sum(arr, n, sum)\n
+    # Initialize the dp array\n
+    dp = [[False for _ in range(sum + 1)] for _ in range(n + 1)]\n
+
+    # If sum is 0, answer is true\n
+    for i in range(n + 1):\n
+        dp[i][0] = True\n
+
+    # Fill the dp array\n
+    for i in range(1, n + 1):\n
+        for j in range(1, sum + 1):\n
+            if arr[i-1] > j:\n
+                dp[i][j] = dp[i-1][j]\n
+            else:\n
+                dp[i][j] = dp[i-1][j] or dp[i-1][j - arr[i-1]]\n
+
+    return dp[n][sum]\n
+    </string>
+
+
+    <string name="algo8_body1">
+        The Hamiltonian Path Problem is a classic problem in graph theory and combinatorial optimization. The problem is defined as follows:\n
+
+Problem Definition:\n
+
+Given a graph (which can be directed or undirected), a Hamiltonian Path is a path in the graph that visits each vertex exactly once.\n
+The Hamiltonian Path Problem is to determine if such a path exists in the given graph.\n
+    </string>
+    <string name="algo8_sub_header_2">Key Concepts:</string>
+    <string name="algo8_body2">
+        Hamiltonian Path:\n
+A path in a graph that visits each vertex exactly once.\n
+Hamiltonian Circuit (or Cycle):\n
+A cycle in a graph that visits each vertex exactly once and returns to the starting vertex.\n
+        If a Hamiltonian Path exists, you can convert it to a Hamiltonian Circuit by adding an edge between the start and end vertices.\n
+    </string>
+    <string name="algo8_sub_header_3">Algorithmic Approaches:</string>
+    <string name="algo8_body3">
+       Backtracking:\n
+Use backtracking to explore all possible paths. Start from a vertex and recursively try to build a path by visiting adjacent vertices. If the path visits all vertices, you have found a Hamiltonian Path.\n
+Dynamic Programming:\n
+Use dynamic programming for specific types of graphs (like complete graphs or graphs with certain constraints). This approach typically involves maintaining a table to store solutions of subproblems.\n
+Heuristic and Approximation Algorithms:\n
+For large graphs, exact solutions might be computationally expensive. Heuristic algorithms like Genetic Algorithms, Simulated Annealing, or Ant Colony Optimization can be used to find good-enough solutions in a reasonable amount of time.\n
+</string>
+    <string name="algo8_sub_header_4">
+        Complexity
+</string>
+    <string name="algo8_body4">
+       The Hamiltonian Path Problem is NP-complete, meaning that no known polynomial-time algorithm can solve all instances of the problem efficiently.
+        For large graphs, heuristic and approximation methods are often used.
+    </string>
+    <string name="algo8_example_header">Python Example</string>
+    <string name="algo8_example_body">
+        def is_hamiltonian_path(graph, path, pos):\n
+    # Base Case: If all vertices are included in the path\n
+    if pos == len(graph):\n
+    return True\n
+
+    for v in range(len(graph)):\n
+    # Check if this vertex can be added to the current path\n
+    if is_valid_vertex(graph, path, pos, v):\n
+    path[pos] = v\n
+
+    # Recur to construct the rest of the path\n
+    if is_hamiltonian_path(graph, path, pos + 1):\n
+    return True\n
+
+    # If adding vertex v doesn\'t lead to a solution, remove it\n
+    path[pos] = -1\n
+
+    return False\n
+
+    def is_valid_vertex(graph, path, pos, v):\n
+    # Check if this vertex is an adjacent vertex of the previously added vertex\n
+    if graph[path[pos - 1]][v] == 0:\n
+    return False\n
+
+    # Check if the vertex has already been included\n
+    if v in path:\n
+    return False\n
+
+    return True\n
+
+    def hamiltonian_path(graph):\n
+    path = [-1] * len(graph)\n
+    path[0] = 0  # Start from the first vertex\n
+
+    if not is_hamiltonian_path(graph, path, 1):\n
+    return None\n
+
+    return path\n
+
+    # Example usage:\n
+    graph = [\n
+    [0, 1, 1, 1],\n
+    [1, 0, 1, 1],\n
+    [1, 1, 0, 1],\n
+    [1, 1, 1, 0]\n
+    ]\n
+
+    print(hamiltonian_path(graph))  # Example output: [0, 1, 2, 3]\n
+    </string>
+
+    <string name="algo6_body1">
+        The Maximum Clique Problem (MCP) is a fundamental problem in graph theory and computer science. Essentially, given a graph, the goal is to find the largest complete subgraph within it.\n
+
+Graph: A collection of nodes (vertices) connected by edges.\n
+Complete subgraph (Clique): A subgraph where every pair of vertices is connected by an edge.\n
+Maximum clique: The largest clique in a graph.\n
+    </string>
+    <string name="algo6_sub_header_2">Problem Definition:
+        Given an undirected graph, the task is to find the largest clique, which is a subset of vertices such that every two vertices in the subset are connected by an edge.\n
+The clique of a graph is a subset of its vertices such that every pair of vertices in the clique is connected by an edge.\n
+The Maximum Clique Problem aims to find the largest clique in the graph, where "largest" means having the maximum number of vertices.\n
+</string>
+    <string name="algo6_body2">
+        Hamiltonian Path:\n
+A path in a graph that visits each vertex exactly once.\n
+Hamiltonian Circuit (or Cycle):\n
+A cycle in a graph that visits each vertex exactly once and returns to the starting vertex.\n
+        If a Hamiltonian Path exists, you can convert it to a Hamiltonian Circuit by adding an edge between the start and end vertices.\n
+    </string>
+    <string name="algo6_sub_header_3">Key Concepts:</string>
+    <string name="algo6_body3">
+     Clique:\n
+A subset of vertices in which every pair of vertices is connected by an edge.\n
+Maximum Clique:\n
+The largest clique in the graph, where the size of the clique is maximized.\n
+</string>
+    <string name="algo6_sub_header_4">
+        Complexity and Challenges
+</string>
+    <string name="algo6_body4">
+       The Maximum Clique Problem is notorious for being NP-complete, meaning there\'s no known efficient algorithm to solve it for large graphs.
+        As the number of vertices increases, the problem becomes exponentially harder.
+    </string>
+    <string name="algo6_example_header">Python Example</string>
+    <string name="algo6_example_body">
+        def bron_kerbosch(R, P, X, graph):\n
+    if not P and not X:\n
+        yield R\n
+    while P:\n
+        v = P.pop()\n
+        new_R = R.copy()\n
+        new_R.add(v)\n
+        new_P = P.intersection(graph[v])\n
+        new_X = X.intersection(graph[v])\n
+        yield from bron_kerbosch(new_R, new_P, new_X, graph)\n
+        X.add(v)\n
+
+def find_max_clique(graph):\n
+    P = set(graph.keys())\n
+    R = set()\n
+    X = set()\n
+    cliques = bron_kerbosch(R, P, X, graph)\n
+    max_clique = max(cliques, key=len)\n
+    return max_clique\n
+
+# Example usage:\n
+graph = {\n
+    1: {2, 3, 4},\n
+    2: {1, 3, 4},\n
+    3: {1, 2, 4},\n
+    4: {1, 2, 3}\n
+}\n
+
+print(find_max_clique(graph))  # Output: {1, 2, 3, 4}\n
+    </string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/data_structure_list"
+        android:icon="@android:drawable/stat_notify_more"
+        android:title="@string/mlalgo"
+        app:showAsAction="always"
+        />
+
+</menu>

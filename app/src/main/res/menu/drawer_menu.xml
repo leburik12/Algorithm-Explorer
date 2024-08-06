@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/verse"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/verses"
+            />
+
+        <item
+            android:id="@+id/unseen"
+            android:icon="@android:drawable/ic_menu_zoom"
+            android:title="@string/unseen"
+            />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@android:drawable/alert_light_frame"
+            android:title="@string/about"
+            />
+    </group>
+
+    <item
+        android:title="support"
+        />
+
+    <item android:title="support">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/service"
+                    android:icon="@android:drawable/sym_action_chat"
+                    android:title="@string/service"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmentAlgorithmList"
+        android:title="@string/algorithmlist"
+        android:icon="@android:drawable/ic_lock_power_off"
+        />
+
+    <item
+        android:id="@+id/data_structure_list"
+        android:title="@string/dslist"
+        android:icon="@android:drawable/checkbox_on_background"
+        />
+
+    <item
+        android:id="@+id/computer_vision"
+        android:title="@string/cv"
+        android:icon="@android:drawable/ic_menu_info_details"
+        />
+
+    <item
+        android:id="@+id/natural_language_processing"
+        android:title="@string/nlp"
+        android:icon="@android:drawable/ic_menu_directions"
+        />
+
+    <item
+        android:id="@+id/deep_learning"
+        android:title="@string/deep_learning"
+        android:icon="@android:drawable/ic_dialog_info"
+        />
+
+</menu>

@@ -13,3 +13,16 @@ RecyclerView Usage: Efficiently displays a list of algorithms with item click li
 Kotlin Coroutines: (Optional) For asynchronous tasks like fetching data from a remote source.
 Dependency Injection: (Optional) For managing dependencies and improving code testability.
 Clean Architecture: (Optional) For structuring the app into layers (presentation, domain, data) for better maintainability.
+
+![](screenshots/photo_1.jpg)
+![](screenshots/photo_2.jpg)
+![](screenshots/photo_3.jpg)
+![](screenshots/photo_4.jpg)
+![](screenshots/photo_5.jpg)
+![](screenshots/photo_6.jpg)
+![](screenshots/photo_7.jpg)
+![](screenshots/photo_8.jpg)
+
+
+
+
